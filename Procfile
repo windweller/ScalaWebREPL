@@ -1,1 +1,1 @@
-web: target/start com.mturk.Boot
+web: target/start com.mturk.Boot -Dhttp.port=${PORT} -Dconfig.file=conf/application.conf
