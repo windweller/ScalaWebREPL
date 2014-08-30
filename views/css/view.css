@@ -1,0 +1,158 @@
+/*.on-slide-0 {
+  background-color: #000 !important;
+}*/
+
+.tsblue  { color: #53cdec; }
+.tsred   { color: #d64546; }
+.mustard {  color: #dfc726; }
+ 
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,900,400italic,600italic,700italic,900italic);
+
+
+.deck-container {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  font-size: 16px;
+  line-height: 1.25;
+  overflow: hidden;
+  /* Resets and base styles from HTML5 Boilerplate */
+  /* End HTML5 Boilerplate adaptations */
+}
+
+/*.deck-container li {
+  vertical-align: baseline;
+  text-align: center;
+}
+*/
+
+.keydown.deck-container p, .keydown.deck-container li {
+  font-size: 1.5rem;
+}
+
+.keydown.deck-container .slide.top .spacer.top {
+    -webkit-box-flex: 0;
+    -moz-box-flex: 0;
+    -ms-box-flex: 0;
+    box-flex: 0;
+}
+
+.keydown.deck-container {
+  background-color: white;
+  font-family: 'Source Sans Pro', sans-serif;  
+}
+
+.keydown.deck-container .slide {
+  background-color: white;
+  padding: 0 20px;
+}
+
+/*.keydown.deck-container .content {
+  min-width: 990px;
+  max-width: 1200px;
+}*/
+
+/*.keydown.deck-container .content ul {
+  min-width: 990px;
+  max-width: 990px;
+}*/
+
+
+/*.csstransforms .deck-container .slide h1 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}*/
+
+.keydown.deck-container h1 {
+/*  color: white;*/
+  font-weight: 400;
+/* 
+  background-color: #53cdec;
+  padding-bottom: 200px;
+  margin-left: -1000px;
+  border-left: 1000px solid #53cdec;
+  margin-right: -10000px;
+  border-right: 10000px solid #53cdec;
+*/
+}
+
+.deck-container .slide .CodeMirror {
+/*  min-width: 90%;*/
+  max-width: 1200px;
+}
+
+
+.deck-container .slide.bigcode {
+  padding: 0 0 !important;
+  width: 100%;
+  height: 100%;
+}
+
+/*.keydown.deck-container h2 {
+  color: #d64546;
+}*/
+
+.deck-container .slide .CodeMirror pre {
+  font-size: 1.5em;
+}
+.deck-container .slide .CodeMirror {
+    line-height: 2em;
+    font-family: monospace;
+}
+
+.deck-container .slide .deck-codemirror-result {
+  /*width: 1000px;*/
+  min-width: 500px;
+  padding: 0px;
+  /*padding-left: 10px;*/
+  border: 0px;
+  font-size: 1em;
+}
+
+.deck-container .slide .deck-codemirror-result pre {
+  font-size: 1rem;
+}
+
+/*.slide.intro {
+  width: 100%;
+  background-size: contain;
+  background-color: #000 !important;
+  background-image: url(../images/sauvabelin.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+}*/
+
+/*.slide.questions {
+  width: 100%;
+  background-size: contain;
+  background-color: #53cdec !important;
+  background-image: url(../images/slide-questions.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+}*/
+
+/*.slide.intro h1 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-weight: normal;
+  color: white;
+  margin-top: 20%;
+}
+
+.slide.intro h4 {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-left:-20rem;
+  margin-right:-20rem;
+}
+
+.slide.intro h4 a {
+  color: #53cdec;
+}*/

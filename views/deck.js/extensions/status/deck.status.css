@@ -1,0 +1,16 @@
+.deck-container .deck-status {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  color: black;
+  font-size: 2rem;
+  font-weight: bold;
+  z-index: 4;
+  margin: 0;
+}
+
+@media print {
+  .deck-status {
+    display: none;
+  }
+}

@@ -1,0 +1,25 @@
+/* Loosely based on the Midnight Textmate theme */
+
+.cm-s-default { 
+  background: #0a001f;
+  color: #f8f8f8;
+}
+.cm-s-default span.CodeMirror-selected { background: #a8f !important; }
+.cm-s-default .CodeMirror-gutter { background: #0a001f; border-right: 1px solid #aaa; }
+.cm-s-default .CodeMirror-gutter-text { color: #f8f8f8; }
+.cm-s-default .CodeMirror-cursor { border-left: 1px solid white !important; }
+
+.cm-s-default span.cm-comment { color: #dfc726; font-style: italic; }
+.cm-s-default span.cm-atom { color: #845dc4; }
+.cm-s-default span.cm-number, .cm-s-default span.cm-attribute { color: #ffd500; }
+.cm-s-default span.cm-keyword { color: #53cdec; }
+.cm-s-default span.cm-keyword-special { color: #d64546; }
+.cm-s-default span.cm-string { color: rgb(65,169,80); }
+.cm-s-default span.cm-meta { color: #7678e2; }
+.cm-s-default span.cm-variable-2, .cm-s-default span.cm-tag { color: #99b2ff; }
+.cm-s-default span.cm-variable-3, .cm-s-default span.cm-def { color: white; }
+.cm-s-default span.cm-error { color: #9d1e15; }
+.cm-s-default span.cm-bracket { color: gray; }
+.cm-s-default span.cm-builtin, .cm-s-default span.cm-special { color: #ff9e59; }
+/*.cm-s-default span.cm-operator {color: #92A75C;}*/
+
