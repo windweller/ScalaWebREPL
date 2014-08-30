@@ -13,7 +13,6 @@ object Boot extends App {
 
   val host = config.getString("service.host")
   val portHTTP = config.getInt("service.port")
-  val portTcp = config.getInt("service.ports.tcp")
   val portWs = config.getInt("service.ports.ws")
 
   private val ws = new WsServer(portWs)
