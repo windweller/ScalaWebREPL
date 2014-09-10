@@ -56,9 +56,8 @@
         
         <p>To quote from Alex Aiken, Stanford professor on Compiler construction:</p>
         
-        <blockquote><p>Application domains have distinctive/conflicting needs.</p>
-        
-        <p>There are scientific computing (Fortran), business applications (SQL), and
+        <blockquote><p>Application domains have distinctive/conflicting needs.
+        There are scientific computing (Fortran), business applications (SQL), and
         system programming (C/C++).</p></blockquote>
       </div>
       <div class='spacer bottom'></div>
@@ -71,7 +70,7 @@
         <ol>
         <li>Increasing need in multi-core concurrency</li>
         <li>Productivity > Learning Cost</li>
-        <li>Scala is just awesome</li>
+        <li>Scala is a beautiful language</li>
         <li>You'll be living happily ever after</li>
         </ol>
       </div>
@@ -87,6 +86,30 @@
         <blockquote><p>In the end, programming fast = typing fast</p></blockquote>
         
         <p><a href="https://days2011.scala-lang.org/sites/days2011/files/ws3-1-Hundt.pdf">Google: Loop Recognition in C++/Java/Go/Scala</a>.</p>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h2>Productivity > Learning Cost</h2>
+        
+        <p>Let's think about calculating the occurances of characters in a string.</p>
+        
+        <p><textarea class='code' display='none' mode='text/x-java'>private static Map<Character, Integer> countWords(String s) {&#x000A;  Map <Character, Integer> hm = new HashMap<Character, Integer>();&#x000A;  //String is not even an Iterable &#x000A;  for (int i = 0; i < s.length(); i++) {&#x000A;    Character c = s.charAt(i);  &#x000A;      if (hm.get(c) != null) {     &#x000A;         hm.put(c, hm.get(c) + 1);&#x000A;      }else{&#x000A;         hm.put(c, 1);&#x000A;      }&#x000A;  }&#x000A;  return hm;&#x000A;}</textarea>
+    </p>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h2>Productivity > Learning Cost</h2>
+        
+        <p>Let's do the same task in Scala:</p>
+        
+        <p><textarea class='code' display='none' mode='text/x-scala'>(Map[Char, Int]() /: "Mississippi") {&#x000A;  (m, c) => m + (c -> (m.getOrElse(c, 0) + 1))&#x000A;}</textarea>
+    </p>
       </div>
       <div class='spacer bottom'></div>
     </section>
@@ -124,9 +147,8 @@
         <li>Immutibility vs. Multibility</li>
         <li>Functions with no return</li>
         <li>None, not null</li>
-        <li>Trait and case classes</li>
-        <li>Pattern Match not If else hell</li>
-        <li>Actors</li>
+        <li>Pattern Matching and case classes</li>
+        <li>Trait and Class</li>
         </ol>
         
         
@@ -151,24 +173,307 @@
     <section class='slide'>
       <div class='spacer top'></div>
       <div class='content'>
-        <h2>2. Immutibility vs. Multibility</h2>
+        <h2>1. What is REPL?</h2>
+        
+        <p>However, if you type in something erroneous, REPL will tell you:</p>
+        
+        <p><textarea class='code' display='none' mode='text/x-scala'>val i = 5&#x000A;i = 6</textarea>
+    </p>
       </div>
       <div class='spacer bottom'></div>
     </section>
     <section class='slide'>
       <div class='spacer top'></div>
       <div class='content'>
-        <h1>Some sample code</h1>
+        <h2>2. Immutability vs. Mutability</h2>
         
-        <p><textarea class='code' display='none' mode='text/x-scala'>(Map[Char, Int]() /: "Mississippi") {&#x000A;  (m, c) => m + (c -> (m.getOrElse(c, 0) + 1))&#x000A;}</textarea>
+        <p>That's weird. Why didn't it go through?
+        <br>
+        <br>
+        It turns out <code>var</code> is what Scala uses to mark a <code>variable</code>, and <code>val</code> is used to mark a <code>value</code>. Variable is mutable and can be changed but Value is immutable and cannot be changed.</p>
+        
+        <p><textarea class='code' display='none' mode='text/x-scala'>var i = 5; i = 6&#x000A;val c = 2</textarea>
     </p>
       </div>
       <div class='spacer bottom'></div>
     </section>
-    <section class='full-background large slide'>
+    <section class='slide'>
       <div class='spacer top'></div>
       <div class='content'>
-        <h1>With a Background Image</h1>
+        <h2>2. Immutability vs. Mutability</h2>
+        
+        <h4>What is Mutability? <br></h4>
+        
+        <p>Mutability is when you decide the variable can be changed in the future. Almost all variables in Java are mutable, except for those declared as <code>final</code>. In C++, they are marked as <code>const</code>.</p>
+        
+        <h4>What is Immutability?</h4>
+        
+        <p>Immutability is when you declare a value, not a variable. A value does not change. A value is not the same as constant variable, but nontheless, they behave similarly.</p>
+        
+        <blockquote><p>If you say that <code>a</code> is 5, you can't say it's something else later because you just said it was 5. What are you, some kind of liar? <br />
+        - Learn You a Haskell for Great Good</p></blockquote>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h2>2. Immutability vs. Mutability</h2>
+        
+        <h4>Why is immutability important?</h4>
+        
+        <p>The general concensus is that immutability reduces the use of locking. The book <code>Scala in Depth</code> did a test on immutable and mutable function test in a concurrency setting.</p>
+        
+        <p>The result looks like this -></p>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h2>2. Immutability vs. Mutability</h2>
+        
+        <p><img src="images/OneGoldenRun.jpg" title="One Gold Run img" alt="OneGoldenRun.jpg" /></p>
+        
+        <p><a href="http://www.manning.com/suereth/SiD-Sample02.pdf">Scala in Depth Chapter 2</a></p>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h2>2. Immutability vs. Mutability</h2>
+        
+        <h4>Why is immutability important?</h4>
+        
+        <p>This test is not very valid. They built one function on mutable Hashmap, another function on immutable Hashmap. They are based on TWO very different data structures! The mutable Hashmap was built on Hashtable. The immutable Hashmap was built on Patricia Trie.</p>
+        
+        <p>Their time complexities are different!</p>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h2>2. Immutability vs. Mutability</h2>
+        
+        <p>Hashtable Complexity</p>
+        
+        <p><img src="images/hashTable.jpg" title="hashTable img" alt="hashTable.jpg" /></p>
+        
+        <p>Patricia Trie Complexity</p>
+        
+        <p><img src="images/patriciaTrie.jpg" title="patriciaTrie img" alt="patriciaTrie.jpg" /></p>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h2>2. Immutability vs. Mutability</h2>
+        
+        <h4>Why is immutability important?</h4>
+        
+        <p><br />
+        But in general, immutability can reduce the use of locking and increase the safety and efficiency of concurrent programming. If you don't need to change something, you won't have to face the ugliness of racing condition or dead lock.</p>
+        
+        <h4>How is Immutability achieved?</h4>
+        
+        <p><br />
+        This seems like such a bizarre notion. How to program without re-assignment? Am I falling through a rabbit hole and land in a mad world?
+        <br />
+        <br />
+        Let's see this in action first.</p>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h2>2. Immutability vs. Mutability</h2>
+        
+        <p><textarea class='code' display='none' mode='text/x-scala'>val a = 1&#x000A;val result = amazingFunc(a)&#x000A;&#x000A;def amazingFunc(a: Int) = a + 1</textarea>
+    </p>
+        
+        <p>Small tip: semicolon "<code>;</code>" is not needed in most scenarios.</p>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h2>3. Functions with no return</h2>
+        
+        <p>The formal answer is: we achieve immutability of values through functions with no side effect. We constantly generate (not <code>return</code>) new values instead of re-assigning to the old value.</p>
+        
+        <blockquote><p>Side effect: anything that causes an internal change of state is generating side effect. <br /> <br />
+        Example: print out a value is generating a side effect. Change var <code>a</code> from 3 to 5 is generating a side effect.
+        Functional programming languages can have side effects, but we want to delay them as long as possible.</p></blockquote>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h2>3. Functions with no return</h2>
+        
+        <p>Scala used to differentiate between <code>procedure</code> and <code>function</code>, but now Martin Odersky jumped out and said there shouldn't be any distinction and unified the two.</p>
+        
+        <p><textarea class='code' display='none' mode='text/x-scala'>def funcname(input: Any): Unit = {}</textarea>
+    </p>
+        
+        <p>This function is named as <code>funcname</code>, declared by <code>def</code>, returns <code>Unit</code> type, which is Scala's way of saying it <code>evaluates</code> to nothing.
+        <br> <br>
+        See that I'm not even using the word <code>return</code>, even though semantically I can use it, but the right terminology can help you form a stronger understanding of Scala.</p>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h2>3. Functions with no return</h2>
+        
+        <p>So how do I "return" something? Easy. The last thing in a function is what the function evaluates the input value to.</p>
+        
+        <p><textarea class='code' display='none' mode='text/x-scala'>def addOne(a: Int): Int = {&#x000A;  val result = a + 1&#x000A;  result&#x000A;}</textarea>
+    </p>
+        
+        <p>In Scala, most functions constantly generate (return) values so we can pick those results up and throw them into another function.</p>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h2>4. None, not null</h2>
+        
+        <p>What do I mean by that? Well, I mean let's talk about some error handling.
+        <br>
+        <br>
+        This is a typical error-handling mechanism you would find in Java, Python, or other languages. Java 7 introduced try with resource, but that's all.
+        <br>
+        <br>
+        <textarea class='code' display='none' mode='text/x-java'>try {&#x000A;    //code&#x000A;} catch (ExceptionType name) {&#x000A;&#x000A;} finally {&#x000A;  //close everything&#x000A;}</textarea>
+    </p>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h2>4. None, not null</h2>
+        
+        <p>Scala has three ways to handle errors: <code>Try[T]</code>, <code>Option[T]</code>, and <code>Either[L, R]</code>. We will introduce <code>Option[T]</code> in this seminar because this is the most common one that you would use.
+        <br>
+        <br>
+        Option[T] is a parameterized type.
+        <br>
+        <br>
+        <textarea class='code' display='none' mode='text/x-scala'>val greeting: Option[String] = Some("Hello world")</textarea>
+    </p>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h2>5. Pattern Matching and case classes</h2>
+        
+        <h4>What is a case class?</h4>
+        
+        <p><br>
+        <br>
+        A case class is a special class in Scala that matches loosely to Java's abstract class, but better. It is designed to hold data, and is extremely easy to write.</p>
+        
+        <p><textarea class='code' display='none' mode='text/x-scala'>case class Coffee(name: String, price: Double)</textarea>
+    </p>
+        
+        <p><br>
+        <br></p>
+        
+        <p>There you have it! This is how you define a case class.</p>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h2>5. Pattern Matching and case classes</h2>
+        
+        <h4>Really? That's it?</h4>
+        
+        <p><br>
+        <br></p>
+        
+        <p>Correct answer is no. There are more technical details about those case classes. First, you get six methods for free.</p>
+        
+        <blockquote><p>An <code>apply</code> method is provided so you can construct a class instance without using the keyword <code>new</code>.<br><br>
+        An <code>unapply</code> method is provided so you don't have to provide your own extractor, and this makes pattern matching work.<br><br>
+        You also get toString, equals, hashCode, and Copy methods, unless you specify otherwise.<br><br></p></blockquote>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h2>5. Pattern Matching and case classes</h2>
+        
+        <p>Case classes are treated as "value classes" and are specifically designed to contain values<br><br>
+        Thus, <code>Currency(10, "EUR")</code> is the same as "Currency(10, "EUR")".
+        <br>
+        <br>
+        <textarea class='code' display='none' mode='text/x-scala'>case class Coffee(name: String, price: Double)&#x000A;val coffee1 = Coffee("Mocha", 10)&#x000A;val coffee2 = Coffee("Mocha", 10)&#x000A;coffee1.equals(coffee2)</textarea>
+    </p>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h2>5. Pattern Matching and case classes</h2>
+        
+        <h4>So, what about pattern matching?</h4>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h2>5. Pattern Matching and case classes</h2>
+        
+        <p>You can easily</p>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h2>6. Trait and Class</h2>
+        
+        <p>What is trait? It turns out trait is a compositional model for OOP. Trait is Scala's answer to Java's interface. It's also Scala's way of doing multiple inheritance.
+        <br>
+        <br></p>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h2>6. Trait</h2>
+        
+        <p>What is multiple inheritance?</p>
+        
+        <p><img src="images/Diamond.jpg" title="Diamond img" alt="Diamond.jpg" /></p>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h2>6. Trait</h2>
+        
+        <p><textarea class='code' display='none' mode='text/x-scala'>trait Logger {&#x000A;  def log(msg: String) //An abstract method&#x000A;}&#x000A;&#x000A;class ConsoleLogger extends Logger {&#x000A;  def log(msg: String) {println(msg)} //No override needed&#x000A;}</textarea>
+    </p>
       </div>
       <div class='spacer bottom'></div>
     </section>

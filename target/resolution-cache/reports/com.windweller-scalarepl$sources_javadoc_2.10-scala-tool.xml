@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ivy-report.xsl"?>
+<ivy-report version="1.0">
+	<info
+		organisation="com.windweller"
+		module="scalarepl$sources_javadoc_2.10"
+		revision="1.0"
+		conf="scala-tool"
+		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
+		date="20140828100346"/>
+	<dependencies>
+		<module organisation="org.scala-lang" name="scala-compiler">
+			<revision name="2.10.3" status="release" pubdate="20130927054553" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="1">
+				<license name="BSD-like" url="http://www.scala-lang.org/downloads/license.html    "/>
+				<metadata-artifact status="no" details="" size="2798" time="0" location="/Users/Aimingnie/.ivy2/cache/org.scala-lang/scala-compiler/ivy-2.10.3.xml" searched="false" origin-is-local="false" origin-location="file:/Applications/activator-1.1.0/repository/org.scala-lang/scala-compiler/2.10.3/ivys/ivy.xml"/>
+				<caller organisation="com.windweller" name="scalarepl$sources_javadoc_2.10" conf="scala-tool" rev="2.10.3" rev-constraint-default="2.10.3" rev-constraint-dynamic="2.10.3" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="scala-compiler" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="12437653" time="0" location="/Users/Aimingnie/.ivy2/cache/org.scala-lang/scala-compiler/docs/scala-compiler-2.10.3-javadoc.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.10.3/scala-compiler-2.10.3-javadoc.jar"/>
+					</artifact>
+					<artifact name="scala-compiler" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="2054929" time="0" location="/Users/Aimingnie/.ivy2/cache/org.scala-lang/scala-compiler/srcs/scala-compiler-2.10.3-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.10.3/scala-compiler-2.10.3-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang" name="jline">
+			<revision name="2.10.3" status="release" pubdate="20130927054513" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="3">
+				<license name="BSD-like" url="http://www.scala-lang.org/downloads/license.html    "/>
+				<license name="The BSD License" url="http://www.opensource.org/licenses/bsd-license.php"/>
+				<metadata-artifact status="no" details="" size="2607" time="0" location="/Users/Aimingnie/.ivy2/cache/org.scala-lang/jline/ivy-2.10.3.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/scala-lang/jline/2.10.3/jline-2.10.3.pom"/>
+				<caller organisation="com.windweller" name="scalarepl$sources_javadoc_2.10" conf="scala-tool" rev="2.10.3" rev-constraint-default="2.10.3" rev-constraint-dynamic="2.10.3" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="jline" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="58779" time="0" location="/Users/Aimingnie/.ivy2/cache/org.scala-lang/jline/srcs/jline-2.10.3-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/scala-lang/jline/2.10.3/jline-2.10.3-sources.jar"/>
+					</artifact>
+					<artifact name="jline" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="547659" time="0" location="/Users/Aimingnie/.ivy2/cache/org.scala-lang/jline/docs/jline-2.10.3-javadoc.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/scala-lang/jline/2.10.3/jline-2.10.3-javadoc.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.fusesource.jansi" name="jansi">
+			<revision name="1.4" status="release" pubdate="20100715102157" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://${forge-project-id}.fusesource.org" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="4">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3344" time="0" location="/Users/Aimingnie/.ivy2/cache/org.fusesource.jansi/jansi/ivy-1.4.xml" searched="false" origin-is-local="false" origin-location="file:/Applications/activator-1.1.0/repository/org.fusesource.jansi/jansi/1.4/ivys/ivy.xml"/>
+				<caller organisation="com.windweller" name="scalarepl$sources_javadoc_2.10" conf="scala-tool" rev="1.4" rev-constraint-default="1.4" rev-constraint-dynamic="1.4" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="jansi" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="15341" time="0" location="/Users/Aimingnie/.ivy2/cache/org.fusesource.jansi/jansi/srcs/jansi-1.4-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/fusesource/jansi/jansi/1.4/jansi-1.4-sources.jar"/>
+					</artifact>
+					<artifact name="jansi" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="140077" time="0" location="/Users/Aimingnie/.ivy2/cache/org.fusesource.jansi/jansi/docs/jansi-1.4-javadoc.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/fusesource/jansi/jansi/1.4/jansi-1.4-javadoc.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang" name="scala-reflect">
+			<revision name="2.10.3" status="release" pubdate="20130927054529" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.10.3/" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="0">
+				<license name="BSD-like" url="http://www.scala-lang.org/downloads/license.html    "/>
+				<metadata-artifact status="no" details="" size="2636" time="0" location="/Users/Aimingnie/.ivy2/cache/org.scala-lang/scala-reflect/ivy-2.10.3.xml" searched="false" origin-is-local="false" origin-location="file:/Applications/activator-1.1.0/repository/org.scala-lang/scala-reflect/2.10.3/ivys/ivy.xml"/>
+				<caller organisation="com.windweller" name="scalarepl$sources_javadoc_2.10" conf="scala-tool" rev="2.10.3" rev-constraint-default="2.10.3" rev-constraint-dynamic="2.10.3" callerrev="1.0" extra-info.apiURL="http://www.scala-lang.org/api/2.10.3/"/>
+				<artifacts>
+					<artifact name="scala-reflect" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="33911475" time="0" location="/Users/Aimingnie/.ivy2/cache/org.scala-lang/scala-reflect/docs/scala-reflect-2.10.3-javadoc.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.10.3/scala-reflect-2.10.3-javadoc.jar"/>
+					</artifact>
+					<artifact name="scala-reflect" type="jar" ext="jar" status="no" details="" size="3206936" time="0" location="/Users/Aimingnie/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.10.3.jar">
+						<origin-location is-local="false" location="UNKNOWN"/>
+					</artifact>
+					<artifact name="scala-reflect" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="434915" time="0" location="/Users/Aimingnie/.ivy2/cache/org.scala-lang/scala-reflect/srcs/scala-reflect-2.10.3-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.10.3/scala-reflect-2.10.3-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang" name="scala-library">
+			<revision name="2.10.3" status="release" pubdate="20130927054454" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.10.3/" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="2">
+				<license name="BSD-like" url="http://www.scala-lang.org/downloads/license.html          "/>
+				<metadata-artifact status="no" details="" size="2572" time="0" location="/Users/Aimingnie/.ivy2/cache/org.scala-lang/scala-library/ivy-2.10.3.xml" searched="false" origin-is-local="false" origin-location="file:/Applications/activator-1.1.0/repository/org.scala-lang/scala-library/2.10.3/ivys/ivy.xml"/>
+				<caller organisation="com.windweller" name="scalarepl$sources_javadoc_2.10" conf="scala-tool" rev="2.10.3" rev-constraint-default="2.10.3" rev-constraint-dynamic="2.10.3" callerrev="1.0" extra-info.apiURL="http://www.scala-lang.org/api/2.10.3/"/>
+				<artifacts>
+					<artifact name="scala-library" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="33911475" time="0" location="/Users/Aimingnie/.ivy2/cache/org.scala-lang/scala-library/docs/scala-library-2.10.3-javadoc.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/scala-lang/scala-library/2.10.3/scala-library-2.10.3-javadoc.jar"/>
+					</artifact>
+					<artifact name="scala-library" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="1062304" time="0" location="/Users/Aimingnie/.ivy2/cache/org.scala-lang/scala-library/srcs/scala-library-2.10.3-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/scala-lang/scala-library/2.10.3/scala-library-2.10.3-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+	</dependencies>
+</ivy-report>

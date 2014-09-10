@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ivy-report.xsl"?>
+<ivy-report version="1.0">
+	<info
+		organisation="com.windweller"
+		module="scalarepl$sources_javadoc_2.10"
+		revision="1.0"
+		conf="compile-internal"
+		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
+		date="20140828100346"/>
+	<dependencies>
+		<module organisation="com.typesafe.akka" name="akka-slf4j_2.10">
+			<revision name="2.1.4" status="release" pubdate="20130514083915" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://akka.io" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="21">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3029" time="0" location="/Users/Aimingnie/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.10/ivy-2.1.4.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/typesafe/akka/akka-slf4j_2.10/2.1.4/akka-slf4j_2.10-2.1.4.pom"/>
+				<caller organisation="com.windweller" name="scalarepl$sources_javadoc_2.10" conf="optional, compile, provided, compile-internal" rev="2.1.4" rev-constraint-default="2.1.4" rev-constraint-dynamic="2.1.4" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="akka-slf4j_2.10" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="26554" time="0" location="/Users/Aimingnie/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.10/docs/akka-slf4j_2.10-2.1.4-javadoc.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/typesafe/akka/akka-slf4j_2.10/2.1.4/akka-slf4j_2.10-2.1.4-javadoc.jar"/>
+					</artifact>
+					<artifact name="akka-slf4j_2.10" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="1782" time="0" location="/Users/Aimingnie/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.10/srcs/akka-slf4j_2.10-2.1.4-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/typesafe/akka/akka-slf4j_2.10/2.1.4/akka-slf4j_2.10-2.1.4-sources.jar"/>
+					</artifact>
+					<artifact name="akka-slf4j_2.10" type="jar" ext="jar" status="no" details="" size="12896" time="0" location="/Users/Aimingnie/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.10/jars/akka-slf4j_2.10-2.1.4.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/typesafe/akka/akka-slf4j_2.10/2.1.4/akka-slf4j_2.10-2.1.4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.slf4j" name="slf4j-api">
+			<revision name="1.7.2" status="release" pubdate="20121011145524" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.slf4j.org" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="22">
+				<metadata-artifact status="no" details="" size="4459" time="0" location="/Users/Aimingnie/.ivy2/cache/org.slf4j/slf4j-api/ivy-1.7.2.xml" searched="false" origin-is-local="false" origin-location="file:/Applications/activator-1.1.0/repository/org.slf4j/slf4j-api/1.7.2/ivys/ivy.xml"/>
+				<caller organisation="com.windweller" name="scalarepl$sources_javadoc_2.10" conf="optional, compile, provided, compile-internal" rev="1.7.2" rev-constraint-default="1.7.2" rev-constraint-dynamic="1.7.2" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="slf4j-api" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="47186" time="0" location="/Users/Aimingnie/.ivy2/cache/org.slf4j/slf4j-api/srcs/slf4j-api-1.7.2-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.2/slf4j-api-1.7.2-sources.jar"/>
+					</artifact>
+					<artifact name="slf4j-api" type="jar" ext="jar" status="no" details="" size="26083" time="0" location="/Users/Aimingnie/.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.7.2.jar">
+						<origin-location is-local="false" location="file:/Applications/activator-1.1.0/repository/org.slf4j/slf4j-api/1.7.2/jars/slf4j-api.jar"/>
+					</artifact>
+					<artifact name="slf4j-api" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="183169" time="0" location="/Users/Aimingnie/.ivy2/cache/org.slf4j/slf4j-api/docs/slf4j-api-1.7.2-javadoc.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.2/slf4j-api-1.7.2-javadoc.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.json4s" name="json4s-native_2.10">
+			<revision name="3.2.4" status="release" pubdate="20130404095216" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/json4s/json4s" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="12">
+				<license name="ASL" url="http://github.com/json4s/json4s/raw/HEAD/LICENSE"/>
+				<metadata-artifact status="no" details="" size="2663" time="0" location="/Users/Aimingnie/.ivy2/cache/org.json4s/json4s-native_2.10/ivy-3.2.4.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/json4s/json4s-native_2.10/3.2.4/json4s-native_2.10-3.2.4.pom"/>
+				<caller organisation="com.windweller" name="scalarepl$sources_javadoc_2.10" conf="optional, compile, provided, compile-internal" rev="3.2.4" rev-constraint-default="3.2.4" rev-constraint-dynamic="3.2.4" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="json4s-native_2.10" type="jar" ext="jar" status="no" details="" size="68734" time="0" location="/Users/Aimingnie/.ivy2/cache/org.json4s/json4s-native_2.10/jars/json4s-native_2.10-3.2.4.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/json4s/json4s-native_2.10/3.2.4/json4s-native_2.10-3.2.4.jar"/>
+					</artifact>
+					<artifact name="json4s-native_2.10" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="430378" time="0" location="/Users/Aimingnie/.ivy2/cache/org.json4s/json4s-native_2.10/docs/json4s-native_2.10-3.2.4-javadoc.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/json4s/json4s-native_2.10/3.2.4/json4s-native_2.10-3.2.4-javadoc.jar"/>
+					</artifact>
+					<artifact name="json4s-native_2.10" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="7356" time="0" location="/Users/Aimingnie/.ivy2/cache/org.json4s/json4s-native_2.10/srcs/json4s-native_2.10-3.2.4-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/json4s/json4s-native_2.10/3.2.4/json4s-native_2.10-3.2.4-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.json4s" name="json4s-core_2.10">
+			<revision name="3.2.4" status="release" pubdate="20130404095146" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/json4s/json4s" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="13">
+				<license name="ASL" url="http://github.com/json4s/json4s/raw/HEAD/LICENSE"/>
+				<metadata-artifact status="no" details="" size="2938" time="0" location="/Users/Aimingnie/.ivy2/cache/org.json4s/json4s-core_2.10/ivy-3.2.4.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/json4s/json4s-core_2.10/3.2.4/json4s-core_2.10-3.2.4.pom"/>
+				<caller organisation="com.windweller" name="scalarepl$sources_javadoc_2.10" conf="optional, compile, provided, compile-internal" rev="3.2.4" rev-constraint-default="3.2.4" rev-constraint-dynamic="3.2.4" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="json4s-core_2.10" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="684728" time="0" location="/Users/Aimingnie/.ivy2/cache/org.json4s/json4s-core_2.10/docs/json4s-core_2.10-3.2.4-javadoc.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/json4s/json4s-core_2.10/3.2.4/json4s-core_2.10-3.2.4-javadoc.jar"/>
+					</artifact>
+					<artifact name="json4s-core_2.10" type="jar" ext="jar" status="no" details="" size="568890" time="0" location="/Users/Aimingnie/.ivy2/cache/org.json4s/json4s-core_2.10/jars/json4s-core_2.10-3.2.4.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/json4s/json4s-core_2.10/3.2.4/json4s-core_2.10-3.2.4.jar"/>
+					</artifact>
+					<artifact name="json4s-core_2.10" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="36933" time="0" location="/Users/Aimingnie/.ivy2/cache/org.json4s/json4s-core_2.10/srcs/json4s-core_2.10-3.2.4-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/json4s/json4s-core_2.10/3.2.4/json4s-core_2.10-3.2.4-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang" name="scalap">
+			<revision name="2.10.0" status="release" pubdate="20121220023017" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="16">
+				<license name="BSD-like" url="http://www.scala-lang.org/downloads/license.html    "/>
+				<metadata-artifact status="no" details="" size="2518" time="0" location="/Users/Aimingnie/.ivy2/cache/org.scala-lang/scalap/ivy-2.10.0.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/scala-lang/scalap/2.10.0/scalap-2.10.0.pom"/>
+				<caller organisation="com.windweller" name="scalarepl$sources_javadoc_2.10" conf="optional, compile, provided, compile-internal" rev="2.10.0" rev-constraint-default="2.10.0" rev-constraint-dynamic="2.10.0" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="scalap" type="jar" ext="jar" status="no" details="" size="855012" time="0" location="/Users/Aimingnie/.ivy2/cache/org.scala-lang/scalap/jars/scalap-2.10.0.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/scala-lang/scalap/2.10.0/scalap-2.10.0.jar"/>
+					</artifact>
+					<artifact name="scalap" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="40814" time="0" location="/Users/Aimingnie/.ivy2/cache/org.scala-lang/scalap/srcs/scalap-2.10.0-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/scala-lang/scalap/2.10.0/scalap-2.10.0-sources.jar"/>
+					</artifact>
+					<artifact name="scalap" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="1234075" time="0" location="/Users/Aimingnie/.ivy2/cache/org.scala-lang/scalap/docs/scalap-2.10.0-javadoc.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/scala-lang/scalap/2.10.0/scalap-2.10.0-javadoc.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang" name="scala-compiler">
+			<revision name="2.10.0" status="release" pubdate="20121220022948" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="17">
+				<license name="BSD-like" url="http://www.scala-lang.org/downloads/license.html    "/>
+				<metadata-artifact status="no" details="" size="2809" time="0" location="/Users/Aimingnie/.ivy2/cache/org.scala-lang/scala-compiler/ivy-2.10.0.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.10.0/scala-compiler-2.10.0.pom"/>
+				<caller organisation="com.windweller" name="scalarepl$sources_javadoc_2.10" conf="optional, compile, provided, compile-internal" rev="2.10.0" rev-constraint-default="2.10.0" rev-constraint-dynamic="2.10.0" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="scala-compiler" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="2007189" time="0" location="/Users/Aimingnie/.ivy2/cache/org.scala-lang/scala-compiler/srcs/scala-compiler-2.10.0-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.10.0/scala-compiler-2.10.0-sources.jar"/>
+					</artifact>
+					<artifact name="scala-compiler" type="jar" ext="jar" status="no" details="" size="14149435" time="0" location="/Users/Aimingnie/.ivy2/cache/org.scala-lang/scala-compiler/jars/scala-compiler-2.10.0.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.10.0/scala-compiler-2.10.0.jar"/>
+					</artifact>
+					<artifact name="scala-compiler" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="12021231" time="0" location="/Users/Aimingnie/.ivy2/cache/org.scala-lang/scala-compiler/docs/scala-compiler-2.10.0-javadoc.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.10.0/scala-compiler-2.10.0-javadoc.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang" name="scala-reflect">
+			<revision name="2.10.0" status="release" pubdate="20121220022932" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="18">
+				<license name="BSD-like" url="http://www.scala-lang.org/downloads/license.html    "/>
+				<metadata-artifact status="no" details="" size="2541" time="0" location="/Users/Aimingnie/.ivy2/cache/org.scala-lang/scala-reflect/ivy-2.10.0.xml" searched="false" origin-is-local="false" origin-location="file:/Applications/activator-1.1.0/repository/org.scala-lang/scala-reflect/2.10.0/ivys/ivy.xml"/>
+				<caller organisation="com.windweller" name="scalarepl$sources_javadoc_2.10" conf="optional, compile, provided, compile-internal" rev="2.10.0" rev-constraint-default="2.10.0" rev-constraint-dynamic="2.10.0" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="scala-reflect" type="jar" ext="jar" status="no" details="" size="3149351" time="0" location="/Users/Aimingnie/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.10.0.jar">
+						<origin-location is-local="false" location="file:/Applications/activator-1.1.0/repository/org.scala-lang/scala-reflect/2.10.0/jars/scala-reflect.jar"/>
+					</artifact>
+					<artifact name="scala-reflect" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="418349" time="0" location="/Users/Aimingnie/.ivy2/cache/org.scala-lang/scala-reflect/srcs/scala-reflect-2.10.0-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.10.0/scala-reflect-2.10.0-sources.jar"/>
+					</artifact>
+					<artifact name="scala-reflect" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="33515231" time="0" location="/Users/Aimingnie/.ivy2/cache/org.scala-lang/scala-reflect/docs/scala-reflect-2.10.0-javadoc.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.10.0/scala-reflect-2.10.0-javadoc.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.thoughtworks.paranamer" name="paranamer">
+			<revision name="2.5.2" status="release" pubdate="20121130100456" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="15">
+				<metadata-artifact status="no" details="" size="3447" time="0" location="/Users/Aimingnie/.ivy2/cache/com.thoughtworks.paranamer/paranamer/ivy-2.5.2.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/thoughtworks/paranamer/paranamer/2.5.2/paranamer-2.5.2.pom"/>
+				<caller organisation="com.windweller" name="scalarepl$sources_javadoc_2.10" conf="optional, compile, provided, compile-internal" rev="2.5.2" rev-constraint-default="2.5.2" rev-constraint-dynamic="2.5.2" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="paranamer" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="27100" time="0" location="/Users/Aimingnie/.ivy2/cache/com.thoughtworks.paranamer/paranamer/srcs/paranamer-2.5.2-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/thoughtworks/paranamer/paranamer/2.5.2/paranamer-2.5.2-sources.jar"/>
+					</artifact>
+					<artifact name="paranamer" type="jar" ext="jar" status="no" details="" size="30190" time="0" location="/Users/Aimingnie/.ivy2/cache/com.thoughtworks.paranamer/paranamer/jars/paranamer-2.5.2.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/thoughtworks/paranamer/paranamer/2.5.2/paranamer-2.5.2.jar"/>
+					</artifact>
+					<artifact name="paranamer" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="69387" time="0" location="/Users/Aimingnie/.ivy2/cache/com.thoughtworks.paranamer/paranamer/docs/paranamer-2.5.2-javadoc.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/thoughtworks/paranamer/paranamer/2.5.2/paranamer-2.5.2-javadoc.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.json4s" name="json4s-ast_2.10">
+			<revision name="3.2.4" status="release" pubdate="20130404095107" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/json4s/json4s" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="14">
+				<license name="ASL" url="http://github.com/json4s/json4s/raw/HEAD/LICENSE"/>
+				<metadata-artifact status="no" details="" size="2515" time="0" location="/Users/Aimingnie/.ivy2/cache/org.json4s/json4s-ast_2.10/ivy-3.2.4.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/json4s/json4s-ast_2.10/3.2.4/json4s-ast_2.10-3.2.4.pom"/>
+				<caller organisation="com.windweller" name="scalarepl$sources_javadoc_2.10" conf="optional, compile, provided, compile-internal" rev="3.2.4" rev-constraint-default="3.2.4" rev-constraint-dynamic="3.2.4" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="json4s-ast_2.10" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="7542" time="0" location="/Users/Aimingnie/.ivy2/cache/org.json4s/json4s-ast_2.10/srcs/json4s-ast_2.10-3.2.4-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/json4s/json4s-ast_2.10/3.2.4/json4s-ast_2.10-3.2.4-sources.jar"/>
+					</artifact>
+					<artifact name="json4s-ast_2.10" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="455883" time="0" location="/Users/Aimingnie/.ivy2/cache/org.json4s/json4s-ast_2.10/docs/json4s-ast_2.10-3.2.4-javadoc.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/json4s/json4s-ast_2.10/3.2.4/json4s-ast_2.10-3.2.4-javadoc.jar"/>
+					</artifact>
+					<artifact name="json4s-ast_2.10" type="jar" ext="jar" status="no" details="" size="86540" time="0" location="/Users/Aimingnie/.ivy2/cache/org.json4s/json4s-ast_2.10/jars/json4s-ast_2.10-3.2.4.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/json4s/json4s-ast_2.10/3.2.4/json4s-ast_2.10-3.2.4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.spray" name="spray-json_2.10">
+			<revision name="1.2.6" status="release" pubdate="20140410044706" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/spray/spray-json" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="10">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="2951" time="0" location="/Users/Aimingnie/.ivy2/cache/io.spray/spray-json_2.10/ivy-1.2.6.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/io/spray/spray-json_2.10/1.2.6/spray-json_2.10-1.2.6.pom"/>
+				<caller organisation="com.windweller" name="scalarepl$sources_javadoc_2.10" conf="optional, compile, provided, compile-internal" rev="1.2.6" rev-constraint-default="1.2.6" rev-constraint-dynamic="1.2.6" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="spray-json_2.10" type="jar" ext="jar" status="no" details="" size="320621" time="0" location="/Users/Aimingnie/.ivy2/cache/io.spray/spray-json_2.10/jars/spray-json_2.10-1.2.6.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/io/spray/spray-json_2.10/1.2.6/spray-json_2.10-1.2.6.jar"/>
+					</artifact>
+					<artifact name="spray-json_2.10" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="19851" time="0" location="/Users/Aimingnie/.ivy2/cache/io.spray/spray-json_2.10/srcs/spray-json_2.10-1.2.6-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/io/spray/spray-json_2.10/1.2.6/spray-json_2.10-1.2.6-sources.jar"/>
+					</artifact>
+					<artifact name="spray-json_2.10" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="610294" time="0" location="/Users/Aimingnie/.ivy2/cache/io.spray/spray-json_2.10/docs/spray-json_2.10-1.2.6-javadoc.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/io/spray/spray-json_2.10/1.2.6/spray-json_2.10-1.2.6-javadoc.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang" name="scala-library">
+			<revision name="2.10.4" status="release" pubdate="20140318174629" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.10.4/" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="11">
+				<license name="BSD-like" url="http://www.scala-lang.org/downloads/license.html          "/>
+				<metadata-artifact status="no" details="" size="2585" time="0" location="/Users/Aimingnie/.ivy2/cache/org.scala-lang/scala-library/ivy-2.10.4.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/scala-lang/scala-library/2.10.4/scala-library-2.10.4.pom"/>
+				<caller organisation="com.windweller" name="scalarepl$sources_javadoc_2.10" conf="optional, compile, provided, compile-internal" rev="2.10.4" rev-constraint-default="2.10.4" rev-constraint-dynamic="2.10.4" callerrev="1.0" extra-info.apiURL="http://www.scala-lang.org/api/2.10.4/"/>
+				<artifacts>
+					<artifact name="scala-library" type="jar" ext="jar" status="no" details="" size="7126372" time="0" location="/Users/Aimingnie/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.10.4.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/scala-lang/scala-library/2.10.4/scala-library-2.10.4.jar"/>
+					</artifact>
+					<artifact name="scala-library" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="33913490" time="0" location="/Users/Aimingnie/.ivy2/cache/org.scala-lang/scala-library/docs/scala-library-2.10.4-javadoc.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/scala-lang/scala-library/2.10.4/scala-library-2.10.4-javadoc.jar"/>
+					</artifact>
+					<artifact name="scala-library" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="1062421" time="0" location="/Users/Aimingnie/.ivy2/cache/org.scala-lang/scala-library/srcs/scala-library-2.10.4-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/scala-lang/scala-library/2.10.4/scala-library-2.10.4-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.spray" name="spray-routing">
+			<revision name="1.1.1" status="release" pubdate="20140317055551" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://spray.io" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="6">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3671" time="0" location="/Users/Aimingnie/.ivy2/cache/io.spray/spray-routing/ivy-1.1.1.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/io/spray/spray-routing/1.1.1/spray-routing-1.1.1.pom"/>
+				<caller organisation="com.windweller" name="scalarepl$sources_javadoc_2.10" conf="optional, compile, provided, compile-internal" rev="1.1.1" rev-constraint-default="1.1.1" rev-constraint-dynamic="1.1.1" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="spray-routing" type="jar" ext="jar" status="no" details="" size="1089720" time="0" location="/Users/Aimingnie/.ivy2/cache/io.spray/spray-routing/jars/spray-routing-1.1.1.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/io/spray/spray-routing/1.1.1/spray-routing-1.1.1.jar"/>
+					</artifact>
+					<artifact name="spray-routing" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="1253081" time="0" location="/Users/Aimingnie/.ivy2/cache/io.spray/spray-routing/docs/spray-routing-1.1.1-javadoc.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/io/spray/spray-routing/1.1.1/spray-routing-1.1.1-javadoc.jar"/>
+					</artifact>
+					<artifact name="spray-routing" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="80124" time="0" location="/Users/Aimingnie/.ivy2/cache/io.spray/spray-routing/srcs/spray-routing-1.1.1-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/io/spray/spray-routing/1.1.1/spray-routing-1.1.1-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.chuusai" name="shapeless_2.10">
+			<revision name="1.2.4" status="release" pubdate="20130226145121" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/milessabin/shapeless" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="9">
+				<license name="Apache License" url="http://www.apache.org/licenses/"/>
+				<metadata-artifact status="no" details="" size="2634" time="0" location="/Users/Aimingnie/.ivy2/cache/com.chuusai/shapeless_2.10/ivy-1.2.4.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/chuusai/shapeless_2.10/1.2.4/shapeless_2.10-1.2.4.pom"/>
+				<caller organisation="com.windweller" name="scalarepl$sources_javadoc_2.10" conf="optional, compile, provided, compile-internal" rev="1.2.4" rev-constraint-default="1.2.4" rev-constraint-dynamic="1.2.4" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="shapeless_2.10" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="74241" time="0" location="/Users/Aimingnie/.ivy2/cache/com.chuusai/shapeless_2.10/srcs/shapeless_2.10-1.2.4-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/chuusai/shapeless_2.10/1.2.4/shapeless_2.10-1.2.4-sources.jar"/>
+					</artifact>
+					<artifact name="shapeless_2.10" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="1560847" time="0" location="/Users/Aimingnie/.ivy2/cache/com.chuusai/shapeless_2.10/docs/shapeless_2.10-1.2.4-javadoc.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/chuusai/shapeless_2.10/1.2.4/shapeless_2.10-1.2.4-javadoc.jar"/>
+					</artifact>
+					<artifact name="shapeless_2.10" type="jar" ext="jar" status="no" details="" size="1280423" time="0" location="/Users/Aimingnie/.ivy2/cache/com.chuusai/shapeless_2.10/jars/shapeless_2.10-1.2.4.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/chuusai/shapeless_2.10/1.2.4/shapeless_2.10-1.2.4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.spray" name="spray-httpx">
+			<revision name="1.1.1" status="release" pubdate="20140317055950" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://spray.io" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="7">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="4236" time="0" location="/Users/Aimingnie/.ivy2/cache/io.spray/spray-httpx/ivy-1.1.1.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/io/spray/spray-httpx/1.1.1/spray-httpx-1.1.1.pom"/>
+				<caller organisation="com.windweller" name="scalarepl$sources_javadoc_2.10" conf="optional, compile, provided, compile-internal" rev="1.1.1" rev-constraint-default="1.1.1" rev-constraint-dynamic="1.1.1" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="spray-httpx" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="711400" time="0" location="/Users/Aimingnie/.ivy2/cache/io.spray/spray-httpx/docs/spray-httpx-1.1.1-javadoc.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/io/spray/spray-httpx/1.1.1/spray-httpx-1.1.1-javadoc.jar"/>
+					</artifact>
+					<artifact name="spray-httpx" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="44625" time="0" location="/Users/Aimingnie/.ivy2/cache/io.spray/spray-httpx/srcs/spray-httpx-1.1.1-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/io/spray/spray-httpx/1.1.1/spray-httpx-1.1.1-sources.jar"/>
+					</artifact>
+					<artifact name="spray-httpx" type="jar" ext="jar" status="no" details="" size="459201" time="0" location="/Users/Aimingnie/.ivy2/cache/io.spray/spray-httpx/jars/spray-httpx-1.1.1.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/io/spray/spray-httpx/1.1.1/spray-httpx-1.1.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.jvnet.mimepull" name="mimepull">
+			<revision name="1.9.4" status="release" pubdate="20131112054917" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://mimepull.java.net" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="8">
+				<license name="CDDL 1.1" url="https://glassfish.java.net/public/CDDL+GPL_1_1.html"/>
+				<license name="GPL2 w/ CPE" url="https://glassfish.java.net/public/CDDL+GPL_1_1.html"/>
+				<metadata-artifact status="no" details="" size="3821" time="0" location="/Users/Aimingnie/.ivy2/cache/org.jvnet.mimepull/mimepull/ivy-1.9.4.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/jvnet/mimepull/mimepull/1.9.4/mimepull-1.9.4.pom"/>
+				<caller organisation="com.windweller" name="scalarepl$sources_javadoc_2.10" conf="optional, compile, provided, compile-internal" rev="1.9.4" rev-constraint-default="1.9.4" rev-constraint-dynamic="1.9.4" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="mimepull" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="53524" time="0" location="/Users/Aimingnie/.ivy2/cache/org.jvnet.mimepull/mimepull/docs/mimepull-1.9.4-javadoc.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/jvnet/mimepull/mimepull/1.9.4/mimepull-1.9.4-javadoc.jar"/>
+					</artifact>
+					<artifact name="mimepull" type="jar" ext="jar" status="no" details="" size="63134" time="0" location="/Users/Aimingnie/.ivy2/cache/org.jvnet.mimepull/mimepull/jars/mimepull-1.9.4.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/jvnet/mimepull/mimepull/1.9.4/mimepull-1.9.4.jar"/>
+					</artifact>
+					<artifact name="mimepull" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="67771" time="0" location="/Users/Aimingnie/.ivy2/cache/org.jvnet.mimepull/mimepull/srcs/mimepull-1.9.4-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/jvnet/mimepull/mimepull/1.9.4/mimepull-1.9.4-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.spray" name="spray-can">
+			<revision name="1.1.1" status="release" pubdate="20140317055347" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://spray.io" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="0">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3357" time="0" location="/Users/Aimingnie/.ivy2/cache/io.spray/spray-can/ivy-1.1.1.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/io/spray/spray-can/1.1.1/spray-can-1.1.1.pom"/>
+				<caller organisation="com.windweller" name="scalarepl$sources_javadoc_2.10" conf="optional, compile, provided, compile-internal" rev="1.1.1" rev-constraint-default="1.1.1" rev-constraint-dynamic="1.1.1" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="spray-can" type="jar" ext="jar" status="no" details="" size="730299" time="0" location="/Users/Aimingnie/.ivy2/cache/io.spray/spray-can/jars/spray-can-1.1.1.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/io/spray/spray-can/1.1.1/spray-can-1.1.1.jar"/>
+					</artifact>
+					<artifact name="spray-can" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="509891" time="0" location="/Users/Aimingnie/.ivy2/cache/io.spray/spray-can/docs/spray-can-1.1.1-javadoc.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/io/spray/spray-can/1.1.1/spray-can-1.1.1-javadoc.jar"/>
+					</artifact>
+					<artifact name="spray-can" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="84036" time="0" location="/Users/Aimingnie/.ivy2/cache/io.spray/spray-can/srcs/spray-can-1.1.1-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/io/spray/spray-can/1.1.1/spray-can-1.1.1-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.spray" name="spray-io">
+			<revision name="1.1.1" status="release" pubdate="20140317060249" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://spray.io" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="1">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3135" time="0" location="/Users/Aimingnie/.ivy2/cache/io.spray/spray-io/ivy-1.1.1.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/io/spray/spray-io/1.1.1/spray-io-1.1.1.pom"/>
+				<caller organisation="com.windweller" name="scalarepl$sources_javadoc_2.10" conf="optional, compile, provided, compile-internal" rev="1.1.1" rev-constraint-default="1.1.1" rev-constraint-dynamic="1.1.1" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="spray-io" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="842299" time="0" location="/Users/Aimingnie/.ivy2/cache/io.spray/spray-io/docs/spray-io-1.1.1-javadoc.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/io/spray/spray-io/1.1.1/spray-io-1.1.1-javadoc.jar"/>
+					</artifact>
+					<artifact name="spray-io" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="55635" time="0" location="/Users/Aimingnie/.ivy2/cache/io.spray/spray-io/srcs/spray-io-1.1.1-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/io/spray/spray-io/1.1.1/spray-io-1.1.1-sources.jar"/>
+					</artifact>
+					<artifact name="spray-io" type="jar" ext="jar" status="no" details="" size="570220" time="0" location="/Users/Aimingnie/.ivy2/cache/io.spray/spray-io/jars/spray-io-1.1.1.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/io/spray/spray-io/1.1.1/spray-io-1.1.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.spray" name="spray-http">
+			<revision name="1.1.1" status="release" pubdate="20140317055820" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://spray.io" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="3">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3121" time="0" location="/Users/Aimingnie/.ivy2/cache/io.spray/spray-http/ivy-1.1.1.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/io/spray/spray-http/1.1.1/spray-http-1.1.1.pom"/>
+				<caller organisation="com.windweller" name="scalarepl$sources_javadoc_2.10" conf="optional, compile, provided, compile-internal" rev="1.1.1" rev-constraint-default="1.1.1" rev-constraint-dynamic="1.1.1" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="spray-http" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="1648317" time="0" location="/Users/Aimingnie/.ivy2/cache/io.spray/spray-http/docs/spray-http-1.1.1-javadoc.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/io/spray/spray-http/1.1.1/spray-http-1.1.1-javadoc.jar"/>
+					</artifact>
+					<artifact name="spray-http" type="jar" ext="jar" status="no" details="" size="1530283" time="0" location="/Users/Aimingnie/.ivy2/cache/io.spray/spray-http/jars/spray-http-1.1.1.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/io/spray/spray-http/1.1.1/spray-http-1.1.1.jar"/>
+					</artifact>
+					<artifact name="spray-http" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="99330" time="0" location="/Users/Aimingnie/.ivy2/cache/io.spray/spray-http/srcs/spray-http-1.1.1-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/io/spray/spray-http/1.1.1/spray-http-1.1.1-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.parboiled" name="parboiled-scala_2.10">
+			<revision name="1.1.6" status="release" pubdate="20130826065413" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://parboiled.org" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="4">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="2946" time="0" location="/Users/Aimingnie/.ivy2/cache/org.parboiled/parboiled-scala_2.10/ivy-1.1.6.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/parboiled/parboiled-scala_2.10/1.1.6/parboiled-scala_2.10-1.1.6.pom"/>
+				<caller organisation="com.windweller" name="scalarepl$sources_javadoc_2.10" conf="optional, compile, provided, compile-internal" rev="1.1.6" rev-constraint-default="1.1.6" rev-constraint-dynamic="1.1.6" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="parboiled-scala_2.10" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="28671" time="0" location="/Users/Aimingnie/.ivy2/cache/org.parboiled/parboiled-scala_2.10/srcs/parboiled-scala_2.10-1.1.6-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/parboiled/parboiled-scala_2.10/1.1.6/parboiled-scala_2.10-1.1.6-sources.jar"/>
+					</artifact>
+					<artifact name="parboiled-scala_2.10" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="591551" time="0" location="/Users/Aimingnie/.ivy2/cache/org.parboiled/parboiled-scala_2.10/docs/parboiled-scala_2.10-1.1.6-javadoc.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/parboiled/parboiled-scala_2.10/1.1.6/parboiled-scala_2.10-1.1.6-javadoc.jar"/>
+					</artifact>
+					<artifact name="parboiled-scala_2.10" type="jar" ext="jar" status="no" details="" size="237780" time="0" location="/Users/Aimingnie/.ivy2/cache/org.parboiled/parboiled-scala_2.10/jars/parboiled-scala_2.10-1.1.6.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/parboiled/parboiled-scala_2.10/1.1.6/parboiled-scala_2.10-1.1.6.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.parboiled" name="parboiled-core">
+			<revision name="1.1.6" status="release" pubdate="20130822113221" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://parboiled.org" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="5">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="2654" time="0" location="/Users/Aimingnie/.ivy2/cache/org.parboiled/parboiled-core/ivy-1.1.6.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/parboiled/parboiled-core/1.1.6/parboiled-core-1.1.6.pom"/>
+				<caller organisation="com.windweller" name="scalarepl$sources_javadoc_2.10" conf="optional, compile, provided, compile-internal" rev="1.1.6" rev-constraint-default="1.1.6" rev-constraint-dynamic="1.1.6" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="parboiled-core" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="166648" time="0" location="/Users/Aimingnie/.ivy2/cache/org.parboiled/parboiled-core/srcs/parboiled-core-1.1.6-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/parboiled/parboiled-core/1.1.6/parboiled-core-1.1.6-sources.jar"/>
+					</artifact>
+					<artifact name="parboiled-core" type="jar" ext="jar" status="no" details="" size="187091" time="0" location="/Users/Aimingnie/.ivy2/cache/org.parboiled/parboiled-core/jars/parboiled-core-1.1.6.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/parboiled/parboiled-core/1.1.6/parboiled-core-1.1.6.jar"/>
+					</artifact>
+					<artifact name="parboiled-core" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="457802" time="0" location="/Users/Aimingnie/.ivy2/cache/org.parboiled/parboiled-core/docs/parboiled-core-1.1.6-javadoc.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/parboiled/parboiled-core/1.1.6/parboiled-core-1.1.6-javadoc.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.spray" name="spray-util">
+			<revision name="1.1.1" status="release" pubdate="20140317055445" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://spray.io" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="2">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3113" time="0" location="/Users/Aimingnie/.ivy2/cache/io.spray/spray-util/ivy-1.1.1.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/io/spray/spray-util/1.1.1/spray-util-1.1.1.pom"/>
+				<caller organisation="com.windweller" name="scalarepl$sources_javadoc_2.10" conf="optional, compile, provided, compile-internal" rev="1.1.1" rev-constraint-default="1.1.1" rev-constraint-dynamic="1.1.1" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="spray-util" type="jar" ext="jar" status="no" details="" size="128871" time="0" location="/Users/Aimingnie/.ivy2/cache/io.spray/spray-util/jars/spray-util-1.1.1.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/io/spray/spray-util/1.1.1/spray-util-1.1.1.jar"/>
+					</artifact>
+					<artifact name="spray-util" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="29948" time="0" location="/Users/Aimingnie/.ivy2/cache/io.spray/spray-util/srcs/spray-util-1.1.1-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/io/spray/spray-util/1.1.1/spray-util-1.1.1-sources.jar"/>
+					</artifact>
+					<artifact name="spray-util" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="479633" time="0" location="/Users/Aimingnie/.ivy2/cache/io.spray/spray-util/docs/spray-util-1.1.1-javadoc.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/io/spray/spray-util/1.1.1/spray-util-1.1.1-javadoc.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.akka" name="akka-actor_2.10">
+			<revision name="2.1.4" status="release" pubdate="20130514083804" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://akka.io" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="19">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="2641" time="0" location="/Users/Aimingnie/.ivy2/cache/com.typesafe.akka/akka-actor_2.10/ivy-2.1.4.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/typesafe/akka/akka-actor_2.10/2.1.4/akka-actor_2.10-2.1.4.pom"/>
+				<caller organisation="com.windweller" name="scalarepl$sources_javadoc_2.10" conf="optional, compile, provided, compile-internal" rev="2.1.4" rev-constraint-default="2.1.4" rev-constraint-dynamic="2.1.4" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="akka-actor_2.10" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="242575" time="0" location="/Users/Aimingnie/.ivy2/cache/com.typesafe.akka/akka-actor_2.10/srcs/akka-actor_2.10-2.1.4-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/typesafe/akka/akka-actor_2.10/2.1.4/akka-actor_2.10-2.1.4-sources.jar"/>
+					</artifact>
+					<artifact name="akka-actor_2.10" type="jar" ext="jar" status="no" details="" size="1884983" time="0" location="/Users/Aimingnie/.ivy2/cache/com.typesafe.akka/akka-actor_2.10/jars/akka-actor_2.10-2.1.4.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/typesafe/akka/akka-actor_2.10/2.1.4/akka-actor_2.10-2.1.4.jar"/>
+					</artifact>
+					<artifact name="akka-actor_2.10" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="1584349" time="0" location="/Users/Aimingnie/.ivy2/cache/com.typesafe.akka/akka-actor_2.10/docs/akka-actor_2.10-2.1.4-javadoc.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/typesafe/akka/akka-actor_2.10/2.1.4/akka-actor_2.10-2.1.4-javadoc.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe" name="config">
+			<revision name="1.0.0" status="release" pubdate="20121015090115" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/typesafehub/config" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="20">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="2725" time="0" location="/Users/Aimingnie/.ivy2/cache/com.typesafe/config/ivy-1.0.0.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/typesafe/config/1.0.0/config-1.0.0.pom"/>
+				<caller organisation="com.windweller" name="scalarepl$sources_javadoc_2.10" conf="optional, compile, provided, compile-internal" rev="1.0.0" rev-constraint-default="1.0.0" rev-constraint-dynamic="1.0.0" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="config" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="124199" time="0" location="/Users/Aimingnie/.ivy2/cache/com.typesafe/config/srcs/config-1.0.0-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/typesafe/config/1.0.0/config-1.0.0-sources.jar"/>
+					</artifact>
+					<artifact name="config" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="149295" time="0" location="/Users/Aimingnie/.ivy2/cache/com.typesafe/config/docs/config-1.0.0-javadoc.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/typesafe/config/1.0.0/config-1.0.0-javadoc.jar"/>
+					</artifact>
+					<artifact name="config" type="jar" ext="jar" status="no" details="" size="185676" time="0" location="/Users/Aimingnie/.ivy2/cache/com.typesafe/config/jars/config-1.0.0.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/typesafe/config/1.0.0/config-1.0.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+	</dependencies>
+</ivy-report>

@@ -4,6 +4,7 @@ import akka.io.IO
 import spray.can.Http
 
 object Boot extends App {
+
   implicit lazy val system = ActorSystem("spray-blog")
 
   import com.typesafe.config.ConfigFactory
@@ -25,5 +26,5 @@ object Boot extends App {
   val rootService = system.actorOf(Props(new RootService()))
 
   IO(Http) ! Http.Bind(rootService, interface = host, port = portHTTP)
-}
 
+}

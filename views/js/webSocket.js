@@ -20,6 +20,7 @@ var webSocket = (function() {
     'use strict';
 
     var WS = window['MozWebSocket'] ? MozWebSocket : WebSocket;
+    // "ws://mindandlanguagelab.com:6696/ws/script"
     var scriptSocket = new WS("ws://localhost:6696/ws/script");
 
     scriptSocket.onopen = function() {
